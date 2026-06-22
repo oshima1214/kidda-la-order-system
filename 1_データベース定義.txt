@@ -1,0 +1,9 @@
+-- 「user1」が既に作成されている場合は，「--」を記述してコメントアウトする
+CREATE USER 'user1'@'localhost' IDENTIFIED BY 'pass1';
+
+CREATE DATABASE KIDDA_LA;
+
+GRANT ALL PRIVILEGES ON KIDDA_LA.* TO 'user1'@'localhost';
+
+USE KIDDA_LA;
+
